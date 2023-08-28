@@ -1,4 +1,4 @@
-name: Build Modules
+name: Build APKs
 on: [workflow_call, workflow_dispatch]
 
 jobs:
@@ -103,7 +103,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@ReVancedX"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -118,15 +118,9 @@ jobs:
           MODULES=${MODULES#"$NL"}
           APKS=${APKS#"$NL"}
 
-          BODY="$(sed 's/^\* \*\*/↪ \*\*/g; s/^\* `/↪ \*\*/g; s/`/\*/g; s/^\* /\↪/g; s/\*\*/\*/g; s/###//g; s/^- /↪ /g; /^==/d;' ../build.md)"
-          MSG="*New build!*
-
-          ${BODY}
+          MSG="*New YouTube ReVanced Build!*
 
           *▼ Download Links:*
-          Modules:
-          ${MODULES}
-
           APKs:
           ${APKS}
           "
