@@ -15,3 +15,5 @@ Get the [latest CI release](https://github.com/origamiofficial/revanced-apk-buil
 
 ## Acknowledgements
 GitHub Action credit goes to [@j-hc](https://github.com/j-hc). Special thanks to [@ReVanced Team](https://github.com/ReVanced) for the patches.
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/origamiofficial/revanced-apk-builder&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://github.com/origamiofficial/revanced-apk-builder)
